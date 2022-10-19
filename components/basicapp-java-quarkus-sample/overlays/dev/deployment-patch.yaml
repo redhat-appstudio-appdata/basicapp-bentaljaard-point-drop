@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: basicapp-java-quarkus-sample
+  namespace: bentaljaard
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:0005078a7023b56dcb74b06f9b355f176fd67bbc0ad0530a30029e6ef0eba7c9
+        name: container-image
+        resources: {}
+status: {}
